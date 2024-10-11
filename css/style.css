@@ -1,0 +1,102 @@
+html,body{margin: 0;
+padding: 0;
+overflow-x: hidden;}
+.landing{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.51);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 84%;
+}
+.liens{
+    display: flex;
+}
+.lien{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-left: 5px;
+}
+.logo{
+    font-weight: bolder;
+    color: white;
+    font-size: 3em;
+}
+
+.punchline{
+    color: white;
+    background-color: rgba(255, 0, 0, 0.51);
+    font-size: 4em;
+    font-weight: bolder;
+    padding: 3px;
+    margin: 3px;
+}
+.burger{
+    height: 14vh;
+    width: 14vh;
+    border: white solid 4px;
+    border-radius: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    display: none;
+
+}
+.burger:hover{
+    background-color: rgba(255, 255, 255, 0.49);
+}
+
+.steak{
+    width: 80%;
+    border: white solid 2px;
+}
+
+@media only screen and (max-width: 600px) {
+
+   .burger{display: flex;}
+    .liens{display: none;}
+    .punchline{font-size: 2.5em;}
+}
+.menu{
+    background-color: rgba(255, 0, 0, 0.51);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 84vh;
+    transition: height 1s ease;
+
+}
+.reduit{
+    height: 0vh;
+}
+.menu>.lien{
+    font-size: 2.5em;
+    margin-bottom: 2vh;
+    transition: all 2s ease;
+
+}
+.cache{
+    display: none;
+    opacity: 0%;
+}
